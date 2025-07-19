@@ -7,8 +7,12 @@
     <meta name="description" content="Home page for WDD231 course." />
     <meta name="author" content="Lautaro Rodriguez" />
     <title>Home | WDD231 </title>
-    <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <script src="scripts/course.js" defer></script>
     <script src="scripts/date.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
@@ -16,11 +20,11 @@
 </head>
 
 <body>
+    <div class="logo">
+        <img src="images/programing.svg" alt="logo" />
+        <span>Welcome to my home page!</span>
+    </div>
     <header>
-        <div class="logo">
-            <img src="images/logo.svg" alt="Site Logo" />
-            <span>Site Name</span>
-        </div>
         <button class="hamburger">&#9776;</button>
         <nav class="navigation">
             <a href="#">Home</a>
@@ -31,21 +35,28 @@
 
     <main>
         <h1>Home</h1>
+        <div class="section-container">
+            <section class="about-me">
+                <h2>About Me</h2>
+                <p>
+                Hi! My name is Lautaro and I'm from Argentina, I'm 28 years old and I love tech and video games! Lorem
+                ipsum dolor sit amet consectetur adipisicing elit. Nobis ut consequatur deleniti nihil sunt dolores
+                iusto labore! Ipsum, doloremque tempora nobis perspiciatis consequuntur magnam dignissimos architecto?
+                Corporis quia ducimus nulla?Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, quasi vero.
+                Tempore voluptatibus dolores, veniam eveniet eum nemo placeat quam magni dicta esse necessitatibus
+                veritatis sint atque, quod maiores sapiente. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Cum ullam vero corporis dolore repellendus aut illo sunt. Quibusdam labore alias, ab nihil eligendi
+                voluptate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus expedita itaque beatae,
+                rem consectetur quisquam soluta sequi. Quasi reprehenderit velit, molestias assumenda cum, voluptate
+                debitis nihil asperiores doloremque, incidunt consequatur
+                </p>
+            </section>
 
-        <section class="about-me">
-            <h2>About Me</h2>
-            <p>
-                Massa facilisis per purus si imperdiet curre amet. Et fames lorem mi phasellus congue nascetur enim
-                consectetur sociosqu natoque risus. Odio vehicula lobortis nisi viverra augue commodo pretium vivamus at
-                duis magna. Quam fringilla convallis ridiculus malesuada accumsan potenti magnis volutpat nulla ipsum.
-                Dis maecenas et praesent class fringilla.
-            </p>
-        </section>
-
-        <section class="student-photo">
-            <h2>Student Photo</h2>
-            <img src="images/student-photo.webp" alt="Photo of Student" />
-        </section>
+            <section class="student-photo">
+                <h2>Student Photo</h2>
+                <img src="images/profile-picture.webp" alt="Photo of Student" />
+            </section>
+        </div>
 
         <section class="web-courses">
             <h2>Web Certificate Courses</h2>
@@ -54,29 +65,33 @@
                 <button>CSE</button>
                 <button>WDD</button>
             </div>
+
             <div class="courses">
                 <div class="course-box">WDD 130</div>
                 <div class="course-box">WDD 131</div>
                 <div class="course-box">WDD 231</div>
-            </div>
-            <p>The total credits for course listed above is 6</p>
-        </section>
-    </main>
 
-    <footer>
-        <div class="social-links">
-            <a href="https://github.com/yourprofile" target="_blank">
+            </div>
+        </section>
+        <p id="total-credits"></p>
+
+
+        <div class="social-icons">
+            <a href="https://github.com/yacares" target="_blank">
                 <img src="images/github.svg" alt="GitHub" />
             </a>
             <a href="https://linkedin.com/in/yourprofile" target="_blank">
                 <img src="images/linkedin.svg" alt="LinkedIn" />
             </a>
-            <a href="#"> 
-                <img src="images/social.svg" alt="Other Social" />
+            <a href="#" target="_blank">
+                <img src="images/instagram.svg" alt="instagram" />
             </a>
         </div>
-        <p>&copy; <span id="currentyear"></span> • Student Name • Utah, USA</p>
-        <p id="lastModified"></p>
+    </main>
+
+    <footer>
+        <p id="currentyear"></p>
+        <p id="lastmodified"></p>
     </footer>
 
     <script src="scripts/main.js"></script>

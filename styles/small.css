@@ -1,0 +1,99 @@
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    h1,
+    h2 {
+        text-align: center;
+    }
+
+    .logo {
+        width: 500px;
+        justify-self: start;
+    }
+
+    .hamburger {
+        display: block;
+        font-size: 2rem;
+        background: none;
+        border: none;
+        color: white;
+        cursor: pointer;
+        margin-top: 0.5rem;
+    }
+
+    nav.navigation {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: var(--primary-color);
+        margin-top: 0.5rem;
+    }
+
+    nav.navigation.show {
+        display: flex;
+    }
+
+    nav.navigation a {
+        text-align: center;
+        align-items: center;
+        align-self: center;
+        align-content: center;
+    }
+
+    .section-container {
+        flex-direction: column;
+    }
+
+    .about-me,
+    .student-photo {
+        width: 100%;
+    }
+
+    .about-me p {
+        margin: 1rem 0;
+    }
+
+    .student-photo img {
+        margin: 1rem auto;
+        max-width: 100%;
+        height: auto;
+        align-self: center;
+    }
+
+    .web-courses {
+        text-align: center;
+    }
+
+    .course-buttons {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .courses {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .course-box {
+        width: 90%;
+        margin-bottom: 1rem;
+    }
+
+    .social-icons {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    body {
+        padding: 0 1rem;
+    }
+
+    section {
+        padding: 1rem;
+    }
+}
