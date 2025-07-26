@@ -30,20 +30,6 @@ function displayMembers(members) {
   members.forEach(member => {
     const card = document.createElement("section");
 
-  
-    let levelClass = "";
-    switch (member.membership) {
-      case 3:
-        levelClass = "member-gold";
-        break;
-      case 2:
-        levelClass = "member-silver";
-        break;
-      default:
-        levelClass = "member-basic";
-    }
-    card.classList.add(levelClass);
-
     
     card.innerHTML = `
       <img src="images/${member.image}" alt="${member.name} logo">

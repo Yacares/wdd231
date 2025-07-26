@@ -1,332 +1,314 @@
-/* ========== LARGE SCREEN STYLES (601px and up) ========== */
-@media only screen and (min-width: 601px) {
+  /* ========== LARGE SCREEN STYLES (601px and up) ========== */
+  @media only screen and (min-width: 601px) {
 
-  /* ========== BASE RESET & TYPOGRAPHY ========== */
-  * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+    /* ========== BASE RESET & TYPOGRAPHY ========== */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      line-height: 1.6;
+      background-color: #fff;
+      color: #222;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    h1 {
+      margin-bottom: 1rem;
+    }
+
+    /* ========== HEADER & NAVIGATION ========== */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background-color: #eaeaea;
+      border-bottom: 1px solid #ccc;
+    }
+
+    .logo img {
+      height: 50px;
+    }
+
+    nav ul {
+      display: flex;
+      gap: 1rem;
+      list-style: none;
+    }
+
+    nav a {
+      font-weight: 500;
+      padding: 0.5rem;
+      transition: background 0.2s;
+    }
+
+    nav a:hover,
+    nav a.active {
+      background-color: #ccc;
+      border-radius: 5px;
+    }
+
+    #darkModeToggle,
+    #darkModeToggle img {
+      border: none;
+      width: 40px;
+      outline: none;
+      box-shadow: none;
+      background: none;
+    }
+
+    #darkModeToggle:focus,
+    #darkModeToggle img:focus {
+      outline: none;
+      box-shadow: none;
+      border: none;
+    }
+
+    #hamburger {
+      display: none;
+      font-size: 2rem;
+      cursor: pointer;
+      user-select: none;
+      padding: 0.5rem;
+    }
+
+    /* ========== HERO SECTION ========== */
+    .hero {
+      position: relative;
+      text-align: center;
+    }
+
+    .hero img {
+      width: 100%;
+      max-height: 400px;
+      object-fit: cover;
+    }
+
+    /* ========== MAIN LAYOUT ========== */
+    main {
+      padding: 2rem;
+    }
+
+    /* ========== DIRECTORY CONTROLS ========== */
+    .menu {
+      text-align: center;
+      margin: 1rem 0;
+    }
+
+    .menu button {
+      padding: 0.5rem 1rem;
+      margin: 0 0.5rem;
+      font-weight: bold;
+    }
+
+    /* ========== DIRECTORY DISPLAY (GRID & LIST) ========== */
+    #members-container.grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+      padding: 1rem;
+    }
+
+    #members-container.list {
+      display: block;
+    }
+
+    #members-container section {
+      background-color: #fff;
+      border: 1px solid #ccc;
+      padding: 1rem;
+      text-align: center;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s;
+    }
+
+    #members-container section:hover {
+      transform: scale(1.02);
+    }
+
+    #members-container img {
+      width: 100px;
+      height: auto;
+      margin-bottom: 0.5rem;
+    }
+
+    #members-container.list section {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 1rem;
+      text-align: left;
+    }
+
+    /* ========== MEMBERSHIP HIGHLIGHTING ========== */
+    #members-container .member-1 {
+      border: 2px solid #ccc;
+    }
+
+    #members-container .member-2 {
+      border: 2px solid silver;
+      background-color: #f8f8f8;
+    }
+
+    #members-container .member-3 {
+      border: 2px solid gold;
+      background-color: #fffbea;
+      box-shadow: 0 0 15px rgba(255, 215, 0, 0.3);
+    }
+
+    /* ========== ARTICLE GRID & LIST (IF USED) ========== */
+    article.grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1rem;
+    }
+
+    article.list {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    article section {
+      background: #f5f5f5;
+      border: 1px solid #ccc;
+      padding: 1rem;
+      border-radius: 10px;
+      text-align: center;
+    }
+
+    article.list section {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      align-items: center;
+      text-align: left;
+    }
+
+    article img {
+      max-width: 100%;
+      max-height: 80px;
+      object-fit: contain;
+      margin-bottom: 0.5rem;
+    }
+
+    article.list img {
+      display: none;
+    }
+
+    /* ========== HIGHLIGHTS / BUSINESS CARDS ========== */
+    .highlights {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    .card {
+      background-color: #f9f9f9;
+      border: 1px solid #ccc;
+      padding: 1rem;
+      border-radius: 8px;
+    }
+
+    .business-directory {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .business-card {
+      background-color: #f0f0f0;
+      padding: 1rem;
+      border-radius: 10px;
+      text-align: center;
+      border: 1px solid #ddd;
+    }
+
+    .business-card img {
+      width: 100%;
+      max-width: 120px;
+      margin: 1rem auto;
+    }
+
+    /* ========== FOOTER ========== */
+    footer {
+      background-color: #eaeaea;
+      padding: 2rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 2rem;
+      font-size: 0.9rem;
+    }
+
+    .footer-contact,
+    .footer-social,
+    .footer-credit {
+      flex: 1 1 200px;
+    }
+
+    .footer-social a img {
+      width: 60px;
+      margin-right: 10px;
+    }
+
+    .footer-credit span {
+      font-weight: bold;
+    }
+
+    /* ========== DARK MODE ========== */
+    body.dark-mode {
+      background-color: #222;
+      color: #f0f0f0;
+    }
+
+    body.dark-mode header,
+    body.dark-mode footer {
+      background-color: #333;
+      color: #f0f0f0;
+    }
+
+    body.dark-mode nav a:hover,
+    body.dark-mode nav a.active {
+      background-color: #555;
+    }
+
+    body.dark-mode .card,
+    body.dark-mode .business-card {
+      background-color: #444;
+      border-color: #666;
+    }
+
+
+    body.dark-mode a {
+      color: #9dcfff;
+    }
+
+
+    body.dark-mode #members-container section {
+      background-color: #1e1e1e;
+      color: #ccc;
+    }
+
+    body.dark-mode .member-basic {
+      border-color: #666;
+    }
+
+    body.dark-mode .member-silver {
+      border-color: silver;
+    }
+
+    body.dark-mode .member-gold {
+      border-color: gold;
+      box-shadow: 0 0 12px rgba(255, 215, 0, 0.3);
+    }
+
   }
-
-  body {
-    font-family: 'Roboto', sans-serif;
-    line-height: 1.6;
-    background-color: #fff;
-    color: #222;
-  }
-
-  a {
-    text-decoration: none;
-    color: inherit;
-  }
-
-  h1 {
-    margin-bottom: 1rem;
-  }
-
-  /* ========== HEADER & NAVIGATION ========== */
-  header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2rem;
-    background-color: #eaeaea;
-    border-bottom: 1px solid #ccc;
-  }
-
-  .logo img {
-    height: 50px;
-  }
-
-  nav ul {
-    display: flex;
-    gap: 1rem;
-    list-style: none;
-  }
-
-  nav a {
-    font-weight: 500;
-    padding: 0.5rem;
-    transition: background 0.2s;
-  }
-
-  nav a:hover,
-  nav a.active {
-    background-color: #ccc;
-    border-radius: 5px;
-  }
-
-  .dark-toggle button {
-    background: none;
-    border: none;
-    font-size: 1.5rem;
-    cursor: pointer;
-  }
-
-  .hamburger {
-    display: none;
-    font-size: 2rem;
-    cursor: pointer;
-    user-select: none;
-    padding: 0.5rem;
-  }
-
-  /* ========== HERO SECTION ========== */
-  .hero {
-    position: relative;
-    text-align: center;
-  }
-
-  .hero img {
-    width: 100%;
-    max-height: 400px;
-    object-fit: cover;
-  }
-
-  /* ========== MAIN LAYOUT ========== */
-  main {
-    padding: 2rem;
-  }
-
-  /* ========== DIRECTORY CONTROLS ========== */
-  .menu {
-    text-align: center;
-    margin: 1rem 0;
-  }
-
-  .menu button {
-    padding: 0.5rem 1rem;
-    margin: 0 0.5rem;
-    font-weight: bold;
-  }
-
-  /* ========== DIRECTORY DISPLAY (GRID & LIST) ========== */
-  #members-container.grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1.5rem;
-    padding: 1rem;
-  }
-
-  #members-container.list {
-    display: block;
-  }
-
-  #members-container section {
-    background-color: #fff;
-    border: 1px solid #ccc;
-    padding: 1rem;
-    text-align: center;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s;
-  }
-
-  #members-container section:hover {
-    transform: scale(1.02);
-  }
-
-  #members-container img {
-    width: 100px;
-    height: auto;
-    margin-bottom: 0.5rem;
-  }
-
-  #members-container.list section {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    margin-bottom: 1rem;
-    text-align: left;
-  }
-
-  /* ========== MEMBERSHIP HIGHLIGHTING ========== */
-  #members-container .member-1 {
-    border: 2px solid #ccc;
-  }
-
-  #members-container .member-2 {
-    border: 2px solid silver;
-    background-color: #f8f8f8;
-  }
-
-  #members-container .member-3 {
-    border: 2px solid gold;
-    background-color: #fffbea;
-    box-shadow: 0 0 15px rgba(255, 215, 0, 0.3);
-  }
-
-  /* ========== ARTICLE GRID & LIST (IF USED) ========== */
-  article.grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 1rem;
-  }
-
-  article.list {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-  }
-
-  article section {
-    background: #f5f5f5;
-    border: 1px solid #ccc;
-    padding: 1rem;
-    border-radius: 10px;
-    text-align: center;
-  }
-
-  article.list section {
-    display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
-    align-items: center;
-    text-align: left;
-  }
-
-  article img {
-    max-width: 100%;
-    max-height: 80px;
-    object-fit: contain;
-    margin-bottom: 0.5rem;
-  }
-
-  article.list img {
-    display: none;
-  }
-
-  /* ========== HIGHLIGHTS / BUSINESS CARDS ========== */
-  .highlights {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    gap: 1rem;
-    margin-bottom: 2rem;
-  }
-
-  .card {
-    background-color: #f9f9f9;
-    border: 1px solid #ccc;
-    padding: 1rem;
-    border-radius: 8px;
-  }
-
-  .business-directory {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    gap: 1.5rem;
-  }
-
-  .business-card {
-    background-color: #f0f0f0;
-    padding: 1rem;
-    border-radius: 10px;
-    text-align: center;
-    border: 1px solid #ddd;
-  }
-
-  .business-card img {
-    width: 100%;
-    max-width: 120px;
-    margin: 1rem auto;
-  }
-
-  /* ========== FOOTER ========== */
-  footer {
-    background-color: #eaeaea;
-    padding: 2rem;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 2rem;
-    font-size: 0.9rem;
-  }
-
-  .footer-contact,
-  .footer-social,
-  .footer-credit {
-    flex: 1 1 200px;
-  }
-
-  .footer-social a img {
-    width: 60px;
-    margin-right: 10px;
-  }
-
-  .footer-credit span {
-    font-weight: bold;
-  }
-
-  /* ========== DARK MODE ========== */
-  body.dark-mode {
-    background-color: #222;
-    color: #f0f0f0;
-  }
-
-  body.dark-mode header,
-  body.dark-mode footer {
-    background-color: #333;
-    color: #f0f0f0;
-  }
-
-  body.dark-mode nav a:hover,
-  body.dark-mode nav a.active {
-    background-color: #555;
-  }
-
-  body.dark-mode .card,
-  body.dark-mode .business-card {
-    background-color: #444;
-    border-color: #666;
-  }
-
-  body.dark-mode #members-container .member-1 {
-    border-color: #555;
-    background-color: #333;
-  }
-
-  body.dark-mode #members-container .member-2 {
-    border-color: silver;
-    background-color: #444;
-  }
-
-  body.dark-mode #members-container .member-3 {
-    border-color: gold;
-    background-color: #554400;
-    box-shadow: 0 0 15px rgba(255, 215, 0, 0.5);
-  }
-
-  body.dark-mode a {
-    color: #9dcfff;
-  }
-
-  /* Membership levels */
-  .member-basic {
-    border-color: gray;
-  }
-
-  .member-silver {
-    border-color: silver;
-  }
-
-  .member-gold {
-    border-color: gold;
-  }
-
-  body.dark-mode #members-container section {
-    background-color: #1e1e1e;
-    color: #ccc;
-  }
-
-  body.dark-mode .member-basic {
-    border-color: #666;
-  }
-
-  body.dark-mode .member-silver {
-    border-color: silver;
-  }
-
-  body.dark-mode .member-gold {
-    border-color: gold;
-    box-shadow: 0 0 12px rgba(255, 215, 0, 0.3);
-  }
-
-}

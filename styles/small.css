@@ -91,6 +91,7 @@
 
     body {
         padding: 0 1rem;
+        justify-content: center;
     }
 
     section {

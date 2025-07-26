@@ -1,122 +1,385 @@
+/* ========== SMALL SCREEN STYLES (600px and down) ========== */
 @media only screen and (max-width: 600px) {
 
-    html,
-    body {
-        width: 100%;
-        height: 100%;
+    * {
+        box-sizing: border-box;
         margin: 0;
         padding: 0;
+    }
+
+    body {
+        font-family: 'Roboto', sans-serif;
+        line-height: 1.6;
+        background-color: #fff;
+        color: #222;
         overflow-x: hidden;
+        /* Prevent horizontal scroll */
     }
 
-    header,
-    footer {
-        width: 100%;
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    h1 {
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+
+    /* ========== HEADER & NAVIGATION ========== */
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
         padding: 1rem;
-        box-sizing: border-box;
-        position: relative;
+        background-color: #eaeaea;
+        border-bottom: 1px solid #ccc;
+        flex-wrap: wrap;
     }
 
+    /* NEW: Make .logo a flex container to position img and hamburger horizontally */
+    .logo {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        max-width: 300px;
+        /* optional, to control logo + hamburger width */
+    }
+
+    /* Keep your img size */
     .logo img {
         height: 40px;
-        margin-bottom: 0.5rem;
     }
 
+    /* Hamburger button styles */
     #hamburger {
         display: block;
-        font-size: 2rem;
+        position: relative;
         background: none;
         border: none;
-        color: white;
+        left: 40px;
+        font-size: 2rem;
         cursor: pointer;
-        margin-top: 0.5rem;
-        position: absolute;
-        right: 1rem;
-        top: 1rem;
-        z-index: 1000;
+        color: #222;
     }
 
-    /* Hide nav menu by default */
-    nav.wayfinder {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        background-color: wheat;
-        margin-top: 0.5rem;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        z-index: 999;
-        padding: 1rem 0;
+    /* Hide nav list by default */
+    nav.wayfinder ul {
         list-style: none;
+        padding-left: 0;
+        margin: 0;
+        flex-direction: column;
+        /* vertical menu */
+        gap: 0.5rem;
+        display: none;
+        /* HIDE nav by default */
+        width: 100%;
+        /* full width below header row */
+        background-color: #eaeaea;
+        padding: 1rem;
+        border-radius: 5px;
     }
 
-    /* Show nav menu when .show class is toggled */
-    nav.wayfinder.show {
+    /* Show nav list when .show class is toggled */
+    nav.wayfinder ul.show {
         display: flex;
     }
 
+    /* Nav link styles for vertical menu */
     nav.wayfinder a {
-        text-align: center;
+        padding: 0.5rem 1rem;
         display: block;
-        padding: 0.5rem 0;
+        border: none;
+        border-radius: 5px;
     }
 
-    nav.wayfinder li {
-        padding: 0.5rem 0;
+    nav a:hover,
+    nav a.active {
+        background-color: #ccc;
     }
 
+    /* Make nav container full width */
+    nav.wayfinder {
+        width: 100%;
+    }
+
+    /* dark toggle and rest remain unchanged */
     .dark-toggle {
-        margin-top: 0.5rem;
+        margin-top: 1rem;
         width: 100%;
         text-align: center;
     }
 
     .dark-toggle button {
-        font-size: 1.2rem;
+        background: none;
+        border: none;
+        font-size: 1.5rem;
+        cursor: pointer;
+        color: white;
     }
 
+    #darkToggleIcon{
+        width: 40px;
+    }
+
+    body.dark-mode #hamburger {
+        color: #fff;
+    }
+
+    body.dark-mode nav.wayfinder ul,
+    body.dark-mode nav.wayfinder ul.show {
+        background-color: #333;
+    }
+
+
+    /* ========== HERO SECTION ========== */
+    .hero {
+        text-align: center;
+    }
+
+    .hero img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        max-height: 250px;
+    }
+
+    /* ========== MAIN LAYOUT ========== */
     main {
         padding: 1rem;
     }
 
+    /* ========== DIRECTORY CONTROLS ========== */
     .menu {
+        text-align: center;
         margin: 1rem 0;
     }
 
     .menu button {
-        display: block;
-        width: 100%;
-        margin: 0.3rem 0;
-        padding: 0.75rem 0;
-        font-size: 1rem;
+        padding: 0.5rem 1rem;
+        margin: 0.25rem;
+        font-weight: bold;
     }
 
+    /* ========== DIRECTORY DISPLAY ========== */
     #members-container.grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    #members-container.list {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        padding: 1rem;
+    }
+
+    #members-container section {
+        background-color: #fff;
+        border: 1px solid #ccc;
+        padding: 1rem;
+        text-align: center;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    #members-container img {
+        width: 80px;
+        height: auto;
+        margin-bottom: 0.5rem;
+    }
+
+    #members-container.list section {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto auto;
+        gap: 0.5rem;
+        align-items: top;
+        padding: 1rem;
+        font-size: 0.95rem;
+    }
+
+    #members-container.list section h3 {
+        grid-row: 1 / span 2;
+        grid-column: 1 / 2;
+        font-size: 1.1rem;
+    }
+
+    #members-container.list section p:nth-of-type(1) {
+        /* Address */
+        grid-row: 1;
+        grid-column: 2;
+    }
+
+    #members-container.list section p:nth-of-type(2) {
+        /* Phone */
+        grid-row: 1;
+        grid-column: 3;
+    }
+
+    #members-container.list section p:nth-of-type(3) {
+        /* Membership */
+        grid-row: 2;
+        grid-column: 2;
+    }
+
+    #members-container.list section a {
+        /* Visit Website */
+        grid-row: 2;
+        grid-column: 3;
+    }
+
+    #members-container.list section img {
+        display: none;
+    }
+
+
+    /* ========== MEMBERSHIP HIGHLIGHTING ========== */
+    .member-1 {
+        border: 2px solid #ccc;
+    }
+
+    .member-2 {
+        border: 2px solid silver;
+        background-color: #f8f8f8;
+    }
+
+    .member-3 {
+        border: 2px solid gold;
+        background-color: #fffbea;
+        box-shadow: 0 0 15px rgba(255, 215, 0, 0.3);
+    }
+
+    /* ========== ARTICLE GRID & LIST ========== */
+    article.grid {
         display: grid;
         grid-template-columns: 1fr;
         gap: 1rem;
     }
 
-    #members-container.list section {
-        display: block;
-        margin-bottom: 1rem;
+    article.list {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
     }
 
-    #members-container img {
-        width: 70px;
+    article section {
+        background: #f5f5f5;
+        border: 1px solid #ccc;
+        padding: 1rem;
+        border-radius: 10px;
+        text-align: center;
+    }
+
+    article.list section {
+        display: block;
+        text-align: center;
+    }
+
+    article img {
+        max-width: 100%;
+        max-height: 60px;
+        object-fit: contain;
+        margin-bottom: 0.5rem;
+    }
+
+    /* ========== HIGHLIGHTS / BUSINESS CARDS ========== */
+    .highlights,
+    .business-directory {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .card,
+    .business-card {
+        background-color: #f9f9f9;
+        border: 1px solid #ccc;
+        padding: 1rem;
+        border-radius: 8px;
+        text-align: center;
+    }
+
+    .business-card img {
+        width: 100%;
+        max-width: 100px;
+        margin: 1rem auto;
+    }
+
+    /* ========== FOOTER ========== */
+    footer {
+        background-color: #eaeaea;
+        padding: 2rem 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        font-size: 0.9rem;
+    }
+
+    footer p {
+        text-align: center;
     }
 
     .footer-contact,
     .footer-social,
     .footer-credit {
-        flex: 1 1 100%;
-        margin-bottom: 1rem;
-        text-align: center;
+        flex: 1 1 auto;
     }
 
     .footer-social a img {
         width: 40px;
-        margin: 0 5px;
+        margin-right: 5px;
     }
+
+    .footer-credit span {
+        font-weight: bold;
+    }
+
+    /* ========== DARK MODE ========== */
+    body.dark-mode {
+        background-color: #222;
+        color: #f0f0f0;
+    }
+
+    body.dark-mode header,
+    body.dark-mode footer {
+        background-color: #333;
+        color: #f0f0f0;
+    }
+
+    body.dark-mode nav a:hover,
+    body.dark-mode nav a.active {
+        background-color: #555;
+    }
+
+    body.dark-mode .card,
+    body.dark-mode .business-card {
+        background-color: #444;
+        border-color: #666;
+    }
+
+    body.dark-mode a {
+        color: #9dcfff;
+    }
+
+    body.dark-mode #members-container section {
+        background-color: #1e1e1e;
+        color: #ccc;
+    }
+
+    body.dark-mode .member-1 {
+        border-color: #666;
+    }
+
+    body.dark-mode .member-2 {
+        border-color: silver;
+    }
+
+    body.dark-mode .member-3 {
+        border-color: gold;
+        box-shadow: 0 0 12px rgba(255, 215, 0, 0.3);
+    }
+
 }
