@@ -1,4 +1,4 @@
-/* ========== SMALL SCREEN STYLES (600px and down) ========== */
+
 @media only screen and (max-width: 600px) {
 
     * {
@@ -13,7 +13,7 @@
         background-color: #fff;
         color: #222;
         overflow-x: hidden;
-        /* Prevent horizontal scroll */
+        
     }
 
     a {
@@ -26,7 +26,7 @@
         text-align: center;
     }
 
-    /* ========== HEADER & NAVIGATION ========== */
+    
     header {
         display: flex;
         justify-content: space-between;
@@ -37,22 +37,22 @@
         flex-wrap: wrap;
     }
 
-    /* NEW: Make .logo a flex container to position img and hamburger horizontally */
+    
     .logo {
         display: flex;
         align-items: center;
         justify-content: space-between;
         width: 100%;
         max-width: 300px;
-        /* optional, to control logo + hamburger width */
+        
     }
 
-    /* Keep your img size */
+    
     .logo img {
         height: 40px;
     }
 
-    /* Hamburger button styles */
+    
     #hamburger {
         display: block;
         position: relative;
@@ -64,29 +64,29 @@
         color: #222;
     }
 
-    /* Hide nav list by default */
+    
     nav.wayfinder ul {
         list-style: none;
         padding-left: 0;
         margin: 0;
         flex-direction: column;
-        /* vertical menu */
+        
         gap: 0.5rem;
         display: none;
-        /* HIDE nav by default */
+        
         width: 100%;
-        /* full width below header row */
+        
         background-color: #eaeaea;
         padding: 1rem;
         border-radius: 5px;
     }
 
-    /* Show nav list when .show class is toggled */
+    
     nav.wayfinder ul.show {
         display: flex;
     }
 
-    /* Nav link styles for vertical menu */
+    
     nav.wayfinder a {
         padding: 0.5rem 1rem;
         display: block;
@@ -99,12 +99,12 @@
         background-color: #ccc;
     }
 
-    /* Make nav container full width */
+    
     nav.wayfinder {
         width: 100%;
     }
 
-    /* dark toggle and rest remain unchanged */
+    
     .dark-toggle {
         margin-top: 1rem;
         width: 100%;
@@ -133,7 +133,7 @@
     }
 
 
-    /* ========== HERO SECTION ========== */
+    
     .hero {
         text-align: center;
     }
@@ -145,12 +145,12 @@
         max-height: 250px;
     }
 
-    /* ========== MAIN LAYOUT ========== */
+    
     main {
         padding: 1rem;
     }
 
-    /* ========== DIRECTORY CONTROLS ========== */
+    
     .menu {
         text-align: center;
         margin: 1rem 0;
@@ -162,7 +162,7 @@
         font-weight: bold;
     }
 
-    /* ========== DIRECTORY DISPLAY ========== */
+    
     #members-container.grid {
         display: grid;
         grid-template-columns: 1fr;
@@ -207,25 +207,25 @@
     }
 
     #members-container.list section p:nth-of-type(1) {
-        /* Address */
+        
         grid-row: 1;
         grid-column: 2;
     }
 
     #members-container.list section p:nth-of-type(2) {
-        /* Phone */
+        
         grid-row: 1;
         grid-column: 3;
     }
 
     #members-container.list section p:nth-of-type(3) {
-        /* Membership */
+        
         grid-row: 2;
         grid-column: 2;
     }
 
     #members-container.list section a {
-        /* Visit Website */
+        
         grid-row: 2;
         grid-column: 3;
     }
@@ -235,7 +235,7 @@
     }
 
 
-    /* ========== MEMBERSHIP HIGHLIGHTING ========== */
+    
     .member-1 {
         border: 2px solid #ccc;
     }
@@ -251,7 +251,7 @@
         box-shadow: 0 0 15px rgba(255, 215, 0, 0.3);
     }
 
-    /* ========== ARTICLE GRID & LIST ========== */
+    
     article.grid {
         display: grid;
         grid-template-columns: 1fr;
@@ -284,7 +284,7 @@
         margin-bottom: 0.5rem;
     }
 
-    /* ========== HIGHLIGHTS / BUSINESS CARDS ========== */
+    
     .highlights,
     .business-directory {
         display: grid;
@@ -307,7 +307,7 @@
         margin: 1rem auto;
     }
 
-    /* ========== FOOTER ========== */
+    
     footer {
         background-color: #eaeaea;
         padding: 2rem 1rem;
@@ -337,7 +337,7 @@
         font-weight: bold;
     }
 
-    /* ========== DARK MODE ========== */
+    
     body.dark-mode {
         background-color: #222;
         color: #f0f0f0;

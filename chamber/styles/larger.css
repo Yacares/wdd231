@@ -1,7 +1,7 @@
-  /* ========== LARGE SCREEN STYLES (601px and up) ========== */
+  
   @media only screen and (min-width: 601px) {
 
-    /* ========== BASE RESET & TYPOGRAPHY ========== */
+    
     * {
       box-sizing: border-box;
       margin: 0;
@@ -24,7 +24,7 @@
       margin-bottom: 1rem;
     }
 
-    /* ========== HEADER & NAVIGATION ========== */
+    
     header {
       display: flex;
       justify-content: space-between;
@@ -80,7 +80,7 @@
       padding: 0.5rem;
     }
 
-    /* ========== HERO SECTION ========== */
+    
     .hero {
       position: relative;
       text-align: center;
@@ -92,12 +92,12 @@
       object-fit: cover;
     }
 
-    /* ========== MAIN LAYOUT ========== */
+    
     main {
       padding: 2rem;
     }
 
-    /* ========== DIRECTORY CONTROLS ========== */
+    
     .menu {
       text-align: center;
       margin: 1rem 0;
@@ -109,7 +109,7 @@
       font-weight: bold;
     }
 
-    /* ========== DIRECTORY DISPLAY (GRID & LIST) ========== */
+    
     #members-container.grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -148,7 +148,7 @@
       text-align: left;
     }
 
-    /* ========== MEMBERSHIP HIGHLIGHTING ========== */
+    
     #members-container .member-1 {
       border: 2px solid #ccc;
     }
@@ -164,7 +164,7 @@
       box-shadow: 0 0 15px rgba(255, 215, 0, 0.3);
     }
 
-    /* ========== ARTICLE GRID & LIST (IF USED) ========== */
+    
     article.grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -203,7 +203,7 @@
       display: none;
     }
 
-    /* ========== HIGHLIGHTS / BUSINESS CARDS ========== */
+    
     .highlights {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -238,7 +238,7 @@
       margin: 1rem auto;
     }
 
-    /* ========== FOOTER ========== */
+    
     footer {
       background-color: #eaeaea;
       padding: 2rem;
@@ -264,7 +264,7 @@
       font-weight: bold;
     }
 
-    /* ========== DARK MODE ========== */
+  
     body.dark-mode {
       background-color: #222;
       color: #f0f0f0;

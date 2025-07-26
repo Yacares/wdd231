@@ -1,7 +1,7 @@
 const toggle = document.getElementById("darkModeToggle");
 const darkToggleIcon = document.getElementById("darkToggleIcon");
 
-// Function to apply dark mode from localStorage and set the correct icon
+
 function applyDarkModeFromStorage() {
   const darkMode = localStorage.getItem("darkMode");
 
@@ -14,7 +14,7 @@ function applyDarkModeFromStorage() {
   }
 }
 
-// Function to toggle dark mode and update localStorage + icon
+
 function toggleDarkMode() {
   const isDark = document.body.classList.toggle("dark-mode");
 
@@ -27,7 +27,7 @@ function toggleDarkMode() {
   }
 }
 
-// Set initial state on page load
+
 document.addEventListener("DOMContentLoaded", () => {
   applyDarkModeFromStorage();
   toggle.addEventListener("click", toggleDarkMode);
