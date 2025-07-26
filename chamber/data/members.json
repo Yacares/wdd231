@@ -1,0 +1,74 @@
+[
+  {
+    "name": "TechNova Solutions",
+    "address": "1010 Sunrise Blvd, Miami, FL",
+    "phone": "(305) 123-4567",
+    "website": "https://www.technova.com",
+    "image": "logo1.png",
+    "membership": 3
+  },
+  {
+    "name": "Sunny Realty Group",
+    "address": "221 Ocean Dr, Fort Lauderdale, FL",
+    "phone": "(954) 555-7890",
+    "website": "https://www.sunnyrealtyfl.com",
+    "image": "logo2.png",
+    "membership": 2
+  },
+  {
+    "name": "Florida Fresh Produce",
+    "address": "890 Greenway Blvd, Tampa, FL",
+    "phone": "(813) 246-1357",
+    "website": "https://www.floridafresh.com",
+    "image": "logo3.png",
+    "membership": 1
+  },
+  {
+    "name": "Alligator Tours",
+    "address": "500 Bayou Lane, Naples, FL",
+    "phone": "(239) 777-4422",
+    "website": "https://www.alligatortours.com",
+    "image": "logo4.png",
+    "membership": 2
+  },
+  {
+    "name": "GatorTech Security",
+    "address": "1221 Swamp St, Gainesville, FL",
+    "phone": "(352) 321-0000",
+    "website": "https://www.gatortech.com",
+    "image": "logo8.png",
+    "membership": 3
+  },
+  {
+    "name": "Beach Breeze Spa",
+    "address": "77 Palm Way, Clearwater, FL",
+    "phone": "(727) 987-6543",
+    "website": "https://www.beachbreezespa.com",
+    "image": "logo6.png",
+    "membership": 1
+  },
+  {
+    "name": "Everglades Eco Trips",
+    "address": "909 Wetlands Rd, Homestead, FL",
+    "phone": "(786) 234-5678",
+    "website": "https://www.evergladeseco.com",
+    "image": "logo7.png",
+    "membership": 2
+  },
+  {
+    "name": "Sunshine Coffee Roasters",
+    "address": "33 Bean St, Orlando, FL",
+    "phone": "(407) 555-2424",
+    "website": "https://www.sunshinecoffee.com",
+    "image": "logo5.png",
+    "membership": 3
+  },
+  {
+    "name": "Coral Reef Dive Co.",
+    "address": "800 Ocean Reef Dr, Key Largo, FL",
+    "phone": "(305) 111-3333",
+    "website": "https://www.coralreefdivers.com",
+    "image": "logo9.png",
+    "membership": 1
+  }
+]
