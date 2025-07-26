@@ -1,0 +1,72 @@
+/* ========== RESET Y BASE GLOBAL ========== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--background-color, #fff);
+  color: var(--text-color, #222);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1 {
+  margin-bottom: 1rem;
+}
+
+/* ========== ESTRUCTURA GENERAL ========== */
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+footer {
+  width: 100%;
+  color: white;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ========== BOTÓN DE MODO OSCURO ========== */
+.dark-toggle {
+  width: 100%;
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+.dark-toggle button {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+}
+
+/* ========== DARK MODE GLOBAL ========== */
+body.dark-mode {
+  background-color: #222;
+  color: #f0f0f0;
+}
+
+body.dark-mode a {
+  color: #9dcfff;
+}
