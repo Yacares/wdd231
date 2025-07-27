@@ -185,8 +185,8 @@
     }
 
     #members-container img {
-        width: 80px;
-        height: auto;
+        width: auto;
+        height: 50px;
         margin-bottom: 0.5rem;
     }
 
@@ -279,7 +279,6 @@
 
     article img {
         max-width: 100%;
-        max-height: 60px;
         object-fit: contain;
         margin-bottom: 0.5rem;
     }
@@ -326,6 +325,8 @@
     .footer-social,
     .footer-credit {
         flex: 1 1 auto;
+        text-align: center;
+        align-items: center;
     }
 
     .footer-social a img {
