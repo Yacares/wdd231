@@ -76,4 +76,4 @@ async function loadWeather() {
   }
 }
 
-document.addEventListener("DOMContentLoaded", loadWeather);
+ document.addEventListener("DOMContentLoaded", loadWeather);
