@@ -739,14 +739,13 @@
     color: var(--dark-text-color);
   }
 
-  main#card-container {
+  #card-container {
     display: grid;
     grid-template-columns: 1fr;
     gap: 2rem;
     padding: 1rem;
   }
 
-  /* Card layout using named grid areas */
   .interest-card {
     display: grid;
     grid-template-areas:
@@ -761,10 +760,10 @@
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
-    /* Center the content within the card */
+
   }
 
-  /* Grid area assignments for card elements */
+
   .interest-card h2 {
     grid-area: title;
     font-size: 1.2rem;
