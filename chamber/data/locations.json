@@ -1,0 +1,50 @@
+[
+  {
+    "name": "South Beach",
+    "address": "Ocean Drive, Miami Beach, FL",
+    "description": "Known for its vibrant nightlife, beautiful art deco architecture, and pristine sandy beaches. A must-see destination for tourists and locals alike.",
+    "image_url": "images/1.webp"
+  },
+  {
+    "name": "Wynwood Walls",
+    "address": "2516 NW 2nd Ave, Miami, FL 33127",
+    "description": "An outdoor museum showcasing large-scale street art from some of the world's best-known muralists. A hub for creativity and culture in Miami.",
+    "image_url": "images/2.webp"
+  },
+  {
+    "name": "Little Havana",
+    "address": "Calle Ocho, SW 8th Street, Miami, FL",
+    "description": "A vibrant neighborhood and a hub of Cuban culture. Stroll through the streets, enjoy authentic food, and watch people playing dominoes at Maximo Gomez Park.",
+    "image_url": "images/3.webp"
+  },
+  {
+    "name": "Vizcaya Museum & Gardens",
+    "address": "3251 S Miami Ave, Miami, FL 33129",
+    "description": "A beautiful European-style estate on Biscayne Bay with stunning architecture, lush gardens, and ornate interiors. A perfect spot for a peaceful escape.",
+    "image_url": "images/4.webp"
+  },
+  {
+    "name": "Perez Art Museum Miami (PAMM)",
+    "address": "1103 Biscayne Blvd, Miami, FL 33132",
+    "description": "A modern and contemporary art museum located in Museum Park, offering breathtaking views of Biscayne Bay and a wide range of international art.",
+    "image_url": "images/5.webp"
+  },
+  {
+    "name": "Everglades National Park",
+    "address": "40001 State Road 9336, Homestead, FL 33034",
+    "description": "A vast and diverse subtropical wilderness that is home to alligators, panthers, and a variety of birds. A unique natural wonder just a short drive from the city.",
+    "image_url": "images/6.webp"
+  },
+  {
+    "name": "Bayside Marketplace",
+    "address": "401 Biscayne Blvd, Miami, FL 33132",
+    "description": "An outdoor festival marketplace with a variety of shops, restaurants, and entertainment options. A great place to enjoy the waterfront and live music.",
+    "image_url": "images/7.webp"
+  },
+  {
+    "name": "Phillip and Patricia Frost Museum",
+    "address": "1101 Biscayne Blvd, Miami, FL 33132",
+    "description": "A leading science museum with a planetarium and aquarium. Features interactive exhibits and educational programs for all ages.",
+    "image_url": "images/8.webp"
+  }
+]

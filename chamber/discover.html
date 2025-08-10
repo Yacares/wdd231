@@ -5,13 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta property="og:title" content="Chamber of Commerce Website of Lautaro Rodriguez for course WDD231">
-    <meta property="og:description" content="Directory page for chamber of commerce WDD231 course project.">
+    <meta property="og:description" content="Discover page for chamber of commerce WDD231 course project.">
     <meta property="og:image" content="https://yacares.github.io/wdd231/chamber/images/hero-image.webp">
-    <meta property="og:url" content="https://yacares.github.io/wdd231/chamber/directory.html">
+    <meta property="og:url" content="https://yacares.github.io/wdd231/chamber/discover.html">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Chamber of Commerce">
     <meta property="fb:app_id" content="123456789012345">
-    <meta name="description" content="Directory page for chamber of commerce WDD231 course project.">
+    <meta name="description" content="Discover page for chamber of commerce WDD231 course project.">
     <title>Chamber of Commerce Website of Lautaro Rodriguez for course WDD231</title>
     <meta name="author" content="Lautaro Rodriguez">
     <link rel="icon" type="image/png" href="images/commerce-icon.png">
@@ -23,12 +23,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <script src="scripts/date.js" defer></script>
     <script src="scripts/darkmode.js" defer></script>
-    <script src="scripts/directory.js" defer></script>
     <script src="scripts/pathfinder.js" defer></script>
     <script src="scripts/hamburger.js" defer></script>
-
-
+    <script src="scripts/form-handler.js" defer></script>
+    <script src="scripts/discover-cards.js" defer></script>
+    <script src="scripts/lastvisit.js" defer></script>
 </head>
+
+
+
 
 <body>
     <header>
@@ -50,18 +53,8 @@
             </button>
         </div>
     </header>
-    <main>
-        <h1>Business Directory</h1>
-        <div class="menu">
-            <button id="grid">Grid</button>
-            <button id="list">List</button>
-        </div>
 
-        <article class="grid" id="members-container">
-            <h2>Members</h2>
-
-        </article>
-    </main>
+    <main id="card-container"></main>
 
     <footer>
         <div class="footer-contact">
@@ -82,6 +75,13 @@
             <p id="lastmodified"></p>
         </div>
     </footer>
+
+    <div id="visit-modal" class="modal-overlay">
+        <div class="modal-content">
+            <span class="close-modal-btn">&times;</span>
+            <p id="modal-message"></p>
+        </div>
+    </div>
 
 </body>
 
