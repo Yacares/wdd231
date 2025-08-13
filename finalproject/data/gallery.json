@@ -1,0 +1,107 @@
+[
+  {
+    "name": "Margherita Pizza",
+    "src": "images/gallery5.webp",
+    "alt": "Delicious Margherita Pizza",
+    "description": "Classic Margherita with fresh basil and mozzarella.",
+    "portion": "2-3 people"
+  },
+  {
+    "name": "Pepperoni Pizza",
+    "src": "images/gallery6.webp",
+    "alt": "Pepperoni Pizza",
+    "description": "Loaded with premium pepperoni slices and cheese.",
+    "portion": "2-3 people"
+  },
+  {
+    "name": "Veggie Pizza",
+    "src": "images/gallery7.webp",
+    "alt": "Veggie Pizza",
+    "description": "A colorful mix of fresh vegetables and mozzarella.",
+    "portion": "2 people"
+  },
+  {
+    "name": "BBQ Chicken Pizza",
+    "src": "images/gallery5.webp",
+    "alt": "BBQ Chicken Pizza",
+    "description": "Topped with BBQ chicken, onions, and cilantro.",
+    "portion": "3 people"
+  },
+  {
+    "name": "Hawaiian Pizza",
+    "src": "images/gallery6.webp",
+    "alt": "Hawaiian Pizza",
+    "description": "Ham and pineapple for the sweet and savory lovers.",
+    "portion": "2-3 people"
+  },
+  {
+    "name": "Cheese Lovers Pizza",
+    "src": "images/gallery7.webp",
+    "alt": "Cheese Lovers Pizza",
+    "description": "Extra cheese, extra happiness!",
+    "portion": "2 people"
+  },
+  {
+    "name": "Supreme Pizza",
+    "src": "images/gallery5.webp",
+    "alt": "Supreme Pizza",
+    "description": "A mix of meats, veggies, and cheese on a golden crust.",
+    "portion": "3-4 people"
+  },
+  {
+    "name": "Dessert Pizza",
+    "src": "images/gallery6.webp",
+    "alt": "Dessert Pizza",
+    "description": "A sweet ending with chocolate, fruits, and drizzle.",
+    "portion": "2 people"
+  },
+  {
+    "name": "Mushroom Pizza",
+    "src": "images/gallery7.webp",
+    "alt": "Mushroom Pizza",
+    "description": "Sautéed mushrooms and garlic on cheesy goodness.",
+    "portion": "2 people"
+  },
+  {
+    "name": "Meat Lovers Pizza",
+    "src": "images/gallery5.webp",
+    "alt": "Meat Lovers Pizza",
+    "description": "Bacon, sausage, ham, and pepperoni overload.",
+    "portion": "3-4 people"
+  },
+  {
+    "name": "Spinach & Feta Pizza",
+    "src": "images/gallery6.webp",
+    "alt": "Spinach & Feta Pizza",
+    "description": "Fresh spinach with creamy feta cheese.",
+    "portion": "2 people"
+  },
+  {
+    "name": "Buffalo Chicken Pizza",
+    "src": "images/gallery7.webp",
+    "alt": "Buffalo Chicken Pizza",
+    "description": "Spicy buffalo chicken with melted cheese.",
+    "portion": "3 people"
+  },
+  {
+    "name": "Four Seasons Pizza",
+    "src": "images/gallery5.webp",
+    "alt": "Four Seasons Pizza",
+    "description": "Divided into four sections with different toppings.",
+    "portion": "3-4 people"
+  },
+  {
+    "name": "Mediterranean Pizza",
+    "src": "images/gallery6.webp",
+    "alt": "Mediterranean Pizza",
+    "description": "Olives, tomatoes, feta, and herbs.",
+    "portion": "2-3 people"
+  },
+  {
+    "name": "Prosciutto Pizza",
+    "src": "images/gallery7.webp",
+    "alt": "Prosciutto Pizza",
+    "description": "Thinly sliced prosciutto on a fresh cheese base.",
+    "portion": "2 people"
+  }
+]

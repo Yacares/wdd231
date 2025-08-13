@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Contact | Center Pizza">
+    <meta property="og:description" content="Contact Center Pizza for your next meal or event.">
+    <meta property="og:image" content="https://yacares.github.io/wdd231/finalproject/images/hero.webp">
+    <meta property="og:url" content="https://yacares.github.io/wdd231/finalproject/contact.html">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Center Pizza">
+    <meta property="fb:app_id" content="123456789012345">
+    <title>Contact | Center Pizza</title>
+    <meta name="author" content="Lautaro Rodriguez">
+    <meta name="description" content="Contact Center Pizza for your next meal or event.">
+    <link rel="icon" href="images/pizza.svg" type="image/svg+xml">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/center-pizza.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <script type="module" src="/wdd231/finalproject/scripts/main.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <nav class="nav-bar">
+            <div class="nav-container">
+                <button class="hamburger" aria-label="Toggle navigation">&#9776;</button>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+
+                    <li class="logo-item">
+                        <img src="images/logo-center.webp" alt="Center Pizza Logo" class="logo">
+                    </li>
+
+                    <li><a href="about-us.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="content">
+            <h2 class="contact-us">Contact Us</h2>
+            <p>📍 Calle 63 N° 112, San Clemente del Tuyú</p>
+            <p>📞 +54 9 2252 51-8621</p>
+            <p>🕒 Mon–Sun: 10 AM–3 PM & 6 PM–12 AM</p>
+        </section>
+
+        <section>
+            <h3>Send Us a Message</h3>
+            <div class="contact-container">
+                <form id="contactForm">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" required />
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" required />
+
+                    <label for="message">Message</label>
+                    <textarea id="message" rows="4" required></textarea>
+
+                    <label for="age">Your Age</label>
+                    <select id="age"></select>
+
+                    <fieldset>
+                        <legend>How did you find us?</legend>
+                        <div id="sources"></div>
+                    </fieldset>
+
+                    <button type="submit">Send</button>
+                </form>
+
+                <img src="images/logo-center.webp" alt="logo center pizza" class="contact-image">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Center Pizza</p>
+        <div class="social-links">
+            <a href="https://www.facebook.com/people/Center-Pizza/100048631123054/" target="_blank"
+                aria-label="Facebook">
+                <img src="images/facebooklogo.svg" alt="Facebook icon">
+            </a>
+            <a href="https://www.instagram.com/centerpizza1992" target="_blank" aria-label="Instagram">
+                <img src="images/instagramlogo.svg" alt="Instagram icon">
+            </a>
+            <a href="https://api.whatsapp.com/send/?phone=5492252518621&text&type=phone_number&app_absent=0"
+                target="_blank" aria-label="WhatsApp">
+                <img src="images/whatsapplogo.svg" alt="WhatsApp icon">
+            </a>
+        </div>
+        <div class="footer-info">
+            <span id="visit-count"></span> | <a href="reference.html" target="_blank" rel="noopener">References</a>
+        </div>
+    </footer>
+</body>
+
+</html>
