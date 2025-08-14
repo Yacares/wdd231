@@ -9,22 +9,22 @@ export function handleContactForm() {
     const email = document.getElementById('email')?.value || '';
     const message = document.getElementById('message')?.value || '';
     const age = document.getElementById('age')?.value || '';
+
     const sourceInputs = document.querySelectorAll("input[name='source']:checked");
     const sourceValues = Array.from(sourceInputs).map(input => input.nextSibling.textContent.trim());
 
     const timestamp = new Date().toLocaleString();
 
-    const userData = {
-      Name: name,
-      Email: email,
-      Message: message,
-      Age: age,
-      Sources: sourceValues.join(', '),
-      Timestamp: timestamp
-    };
+    const params = new URLSearchParams({
+      name,
+      email,
+      message,
+      age,
+      sources: sourceValues.join(', '),
+      timestamp
+    });
 
-    localStorage.setItem('contactData', JSON.stringify(userData));
-    window.location.href = 'thankyou.html';
+    window.location.href = 'thankyou.html?' + params.toString();
   });
 }
 
@@ -32,14 +32,13 @@ export function populateSubmittedData() {
   const displayDiv = document.getElementById('submitted-data');
   if (!displayDiv) return;
 
-  const savedData = JSON.parse(localStorage.getItem('contactData')) || {};
-  for (const [key, value] of Object.entries(savedData)) {
+  const params = new URLSearchParams(window.location.search);
+
+  for (const [key, value] of params.entries()) {
     const p = document.createElement('p');
     p.innerHTML = `<strong>${key}:</strong> ${value}`;
     displayDiv.appendChild(p);
   }
-
-  localStorage.removeItem('contactData');
 }
 
 export function populateSources() {
